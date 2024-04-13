@@ -27,21 +27,12 @@ public:
     srand(time(NULL));
     string name1;
     cout << "Hey player 1 enter your name: ";
-    while(!(cin >> name1))
-    {
-      cin.clear();
-      cin.ignore(125489,'\n');
-    }
-    // later i realised that upper two lines are redundant as there is no need to check wheather the input provided is string or not because eventually everything can be converted to string
+    cin >> name1;
     int indi1 = rand() % 2;
     cout << "Hey " << name1 << " you got " << playerSymbols[indi1] << " ,best of luck\n";
     string name2;
     cout << "Hey player 2 enter your name: ";
-    while(!(cin >> name2))
-    {
-      cin.clear();
-      cin.ignore(125489,'\n');
-    }
+    cin >> name2;
     int indi2;
     do
     {
